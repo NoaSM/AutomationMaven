@@ -30,7 +30,7 @@ public class Main {
                 System.out.println("Number is: " + number);
             }
 
-
+            firstouterwhile:
             while (number == 1) {
 
                 //ArrayList<Double> usdList = new ArrayList<>();
@@ -73,10 +73,21 @@ public class Main {
                         System.out.println("Start Over Y/N?");
                         choice = choose.next();
 
+                        if(choice.equals("Y") || choice.equals("y")){
+                            System.out.println("Please Choose an option (1/2):");
+                            System.out.println("1. Dollars To Shekels");
+                            System.out.println("2. Shekels To Dollars");
+
+                            //choose = new Scanner(System.in);
+                            number = choose.nextInt();
+                            System.out.println("Number is: " + number);
+                            // continue;
+                        }
+
 
                         if (choice.equals("N") || choice.equals("n")) {
                             System.out.println("Thanks For Using Our Currency Converter");
-                            break;
+                            break firstouterwhile;
 
                         }
 
@@ -88,18 +99,32 @@ public class Main {
 
             }
 
-
+            outerwhile:
             while (number == 2) {
                 System.out.println("Please Enter An Amount To Convert");
                 //Scanner input = new Scanner(System.in);
                 double amount = choose.nextDouble();
                 double calILS = new ClassILS().calculate(amount);
                 System.out.println(calILS);
+                usdList.add(calILS);
+                for (int i = 0; i < usdList.size(); i++) {
+                    System.out.println(usdList.get(i));
+                }
+
                 System.out.println("Would you like to continue? Y/N");
                 //Scanner yesno = new Scanner(System.in);
                 String choice = choose.next();
                 System.out.println(choice);
+                if(choice.equals("Y") || choice.equals("y")){
+                    System.out.println("Please Choose an option (1/2):");
+                    System.out.println("1. Dollars To Shekels");
+                    System.out.println("2. Shekels To Dollars");
 
+                    //choose = new Scanner(System.in);
+                    number = choose.nextInt();
+                    System.out.println("Number is: " + number);
+                    // continue;
+                }
                 if (choice.equals("N") || choice.equals("n")) {
                     System.out.println("Thanks For Using Our Currency Converter");
                     break;
@@ -112,11 +137,19 @@ public class Main {
                     System.out.println("Start Over Y/N?");
                     choice = choose.next();
 
+                    if(choice.equals("Y") || choice.equals("y")){
+                        System.out.println("Please Choose an option (1/2):");
+                        System.out.println("1. Dollars To Shekels");
+                        System.out.println("2. Shekels To Dollars");
 
+                        //choose = new Scanner(System.in);
+                        number = choose.nextInt();
+                        System.out.println("Number is: " + number);
+                        // continue;
+                    }
                     if (choice.equals("N") || choice.equals("n")) {
                         System.out.println("Thanks For Using Our Currency Converter");
-                        break;
-
+                        break outerwhile;
                     }
                 }
             }
