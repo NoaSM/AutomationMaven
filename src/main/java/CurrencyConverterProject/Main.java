@@ -36,7 +36,6 @@ public class Main {
             System.out.println("1. Dollars To Shekels");
             System.out.println("2. Shekels To Dollars");
 
-            //choose = new Scanner(System.in);
             number = choose.next();
             System.out.println("Number is: " + number);
         }
@@ -45,11 +44,8 @@ public class Main {
             firstouterwhile:
             while (number.equals("1")) {
 
-                //ArrayList<Double> usdList = new ArrayList<>();
                 System.out.println("Please Enter An Amount To Convert");
-                //Scanner input = new Scanner(System.in);
 
-                //try{
                 String amountString = choose.next();
                 try {
                     double amount = Double.valueOf(amountString);
@@ -61,20 +57,8 @@ public class Main {
                     continue;
                 }
 
-                //}
-//                catch (Exception e){
-//                    System.out.println("Please enter a valid number");
-
-
-                //}
-//                for (int i = 0; i < usdList.size(); i++) {
-//                    System.out.println(usdList.get(i));
-//                }
-
-
-                //System.out.println(usdList);
                 System.out.println("Would you like to continue? Y/N");
-                //Scanner yesno = new Scanner(System.in);
+
                 String choice = choose.next();
                 System.out.println(choice);
 
@@ -95,10 +79,10 @@ public class Main {
                     System.out.println("1. Dollars To Shekels");
                     System.out.println("2. Shekels To Dollars");
 
-                    //choose = new Scanner(System.in);
+
                     number = choose.next();
                     System.out.println("Number is: " + number);
-                    // continue;
+
 
                     while (!(number.equals("1") || number.equals("2"))) {
                         System.out.println("Invalid choice. Choose Again");
@@ -107,7 +91,7 @@ public class Main {
                         System.out.println("1. Dollars To Shekels");
                         System.out.println("2. Shekels To Dollars");
 
-                        //choose = new Scanner(System.in);
+
                         number = choose.next();
                         System.out.println("Number is: " + number);
                     }
@@ -125,10 +109,10 @@ public class Main {
                         System.out.println("1. Dollars To Shekels");
                         System.out.println("2. Shekels To Dollars");
 
-                        //choose = new Scanner(System.in);
+
                         number = choose.next();
                         System.out.println("Number is: " + number);
-                        // continue;
+
 
                         while (!(number.equals("1") || number.equals("2"))) {
                             System.out.println("Invalid choice. Choose Again");
@@ -137,12 +121,11 @@ public class Main {
                             System.out.println("1. Dollars To Shekels");
                             System.out.println("2. Shekels To Dollars");
 
-                            //choose = new Scanner(System.in);
+
                             number = choose.next();
                             System.out.println("Number is: " + number);
                         }
                     }
-
 
                     if (choice.equals("N") || choice.equals("n")) {
                         System.out.println("Thanks For Using Our Currency Converter");
@@ -154,15 +137,8 @@ public class Main {
                         }
                         java.awt.Desktop.getDesktop().edit(resultFile);
                         break mainwhile;
-
                     }
-
-
-                }//usdList.add(calUSD);
-//            for ( int i = 0; i<usdList.size(); i++ ){
-//                System.out.println(usdList.get(i));
-//            }
-
+                }
             }
 
             outerwhile:
@@ -179,17 +155,7 @@ public class Main {
                     System.out.println("Please enter a valid number");
                     continue;
                 }
-
-//                double amount = choose.nextDouble();
-//                double calILS = new ClassILS().calculate(amount);
-//                System.out.println(calILS);
-//                usdList.add(calILS);
-//                for (int i = 0; i < usdList.size(); i++) {
-//                    System.out.println(usdList.get(i));
-//                }
-
                 System.out.println("Would you like to continue? Y/N");
-                //Scanner yesno = new Scanner(System.in);
                 String choice = choose.next();
                 System.out.println(choice);
 
@@ -210,10 +176,8 @@ public class Main {
                     System.out.println("1. Dollars To Shekels");
                     System.out.println("2. Shekels To Dollars");
 
-                    //choose = new Scanner(System.in);
                     number = choose.next();
                     System.out.println("Number is: " + number);
-                    //continue;
 
                     while (!(number.equals("1") || number.equals("2"))) {
                         System.out.println("Invalid choice. Choose Again");
@@ -222,7 +186,6 @@ public class Main {
                         System.out.println("1. Dollars To Shekels");
                         System.out.println("2. Shekels To Dollars");
 
-                        //choose = new Scanner(System.in);
                         number = choose.next();
                         System.out.println("Number is: " + number);
                     }
@@ -240,10 +203,8 @@ public class Main {
                         System.out.println("1. Dollars To Shekels");
                         System.out.println("2. Shekels To Dollars");
 
-                        //choose = new Scanner(System.in);
                         number = choose.next();
                         System.out.println("Number is: " + number);
-                        // continue;
 
                         while (!(number.equals("1") || number.equals("2"))) {
                             System.out.println("Invalid choice. Choose Again");
@@ -252,7 +213,6 @@ public class Main {
                             System.out.println("1. Dollars To Shekels");
                             System.out.println("2. Shekels To Dollars");
 
-                            //choose = new Scanner(System.in);
                             number = choose.next();
                             System.out.println("Number is: " + number);
                         }
@@ -270,78 +230,9 @@ public class Main {
                         java.awt.Desktop.getDesktop().edit(resultFile);
 
                         break mainwhile;
-
-
                     }
-
-
                 }
-//                if(choice.equals("Y") || choice.equals("y")){
-//                    System.out.println("Please Choose an option (1/2):");
-//                    System.out.println("1. Dollars To Shekels");
-//                    System.out.println("2. Shekels To Dollars");
-//
-//                    //choose = new Scanner(System.in);
-//                    number = choose.next();
-//                    System.out.println("Number is: " + number);
-//                    // continue;
-//                }
-//                if (choice.equals("N") || choice.equals("n")) {
-//                    System.out.println("Thanks For Using Our Currency Converter");
-//                    System.out.println("Here are the results:");
-//                    for (int i = 0; i < usdList.size(); i++) {
-//                        System.out.println(usdList.get(i));
-//                        Files.writeString(Paths.get(myResult), usdList.get(i).toString(),StandardOpenOption.APPEND);
-//                        Files.writeString(Paths.get(myResult), "\n",StandardOpenOption.APPEND);
-//                    }
-//                    java.awt.Desktop.getDesktop().edit(resultFile);
-//                    break;
-//                }
-//
-//                while (!(choice.equals("Y") || choice.equals("y"))) {
-//
-//                    System.out.println("Invalid Choice Please Try Again");
-//
-//                    System.out.println("Start Over Y/N?");
-//                    choice = choose.next();
-//
-//                    if(choice.equals("Y") || choice.equals("y")){
-//                        System.out.println("Please Choose an option (1/2):");
-//                        System.out.println("1. Dollars To Shekels");
-//                        System.out.println("2. Shekels To Dollars");
-//
-//                        //choose = new Scanner(System.in);
-//                        number = choose.next();
-//                        System.out.println("Number is: " + number);
-//                        // continue;
-//                        while (!(number.equals("1") || number.equals("2"))) {
-//                            System.out.println("Invalid choice. Choose Again");
-//
-//                            System.out.println("Please Choose an option (1/2):");
-//                            System.out.println("1. Dollars To Shekels");
-//                            System.out.println("2. Shekels To Dollars");
-//
-//                            //choose = new Scanner(System.in);
-//                            number = choose.next();
-//                            System.out.println("Number is: " + number);
-//                        }
-//                    }
-//                    if (choice.equals("N") || choice.equals("n")) {
-//                        System.out.println("Thanks For Using Our Currency Converter");
-//                        System.out.println("Here are the results:");
-//                        for (int i = 0; i < usdList.size(); i++) {
-//                            System.out.println(usdList.get(i));
-//                            Files.writeString(Paths.get(myResult), usdList.get(i).toString(),StandardOpenOption.APPEND);
-//                            Files.writeString(Paths.get(myResult), "\n",StandardOpenOption.APPEND);
-//                        }
-//                        java.awt.Desktop.getDesktop().edit(resultFile);
-//                        break outerwhile;
-//                    }
-//                }
             }
-
-
         }
     }
-
 }
